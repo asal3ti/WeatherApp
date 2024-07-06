@@ -1,0 +1,81 @@
+.content_spacer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 156px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_spacer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    width: calc(100vw - 20%);
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.col_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 40px;
+    color: black;
+    font-size: 30px;
+}
+
+.col_pagination:hover { cursor: pointer; }
+
+.row_spacer a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    margin: 0 10px;
+    background: lightgrey;
+    padding: 0;
+    border-radius: 7px;
+}
+
+.col_card { position: relative; width: 100%; height: 100%; }
+
+.pagination_spacer { margin-top: 50px; }
+
+.pagination_item { 
+    margin-right: 5px;
+}
+
+.pagination_item:last-child {
+    margin-right: 0;
+    font-family: "Poppins";
+}
+
+.pagination_item a {
+    background: #222;
+    border: 1px solid #444;
+    color: #a9a9a9;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pagination_item a:hover {
+    background: #777;
+    border: 1px solid #999;
+    color: #f9f9f9;
+}
+
+.pagination_item span {
+    background: #555 !important;
+    border: 1px solid #777 !important;
+    font-weight: bold;
+    color: #f9f9f9;
+    font-size: 12px;
+}

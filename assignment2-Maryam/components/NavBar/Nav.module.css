@@ -1,0 +1,24 @@
+.visited_item { position: relative; }
+
+.visited_item span {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 10px;
+    color: #a4a4a4;
+}
+
+.nav_error_spacer {
+    position: absolute;
+    display: flex;
+    top: 60px;
+    background: rgb(117, 61, 61);
+    right: 95px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-size: 12px;
+}

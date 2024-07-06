@@ -1,0 +1,13 @@
+.footer_spacer {
+    height: 100px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_spacer p {
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}

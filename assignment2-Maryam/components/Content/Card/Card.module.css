@@ -1,0 +1,169 @@
+.card_spacer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border: 1px solid #d4d4d4;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card_svg {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card_svg svg {
+  position: absolute;
+  width: 140%;
+  height: 100%;
+  left: -70px;
+}
+
+.card_spacer:hover {
+  -webkit-box-reflect: below 15px linear-gradient(rgba(0,0,0,0.0) 80%, rgba(0,0,0,0.14));
+}
+
+.card_header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Poppins";
+  width: 200px;
+  height: 40px;
+}
+
+.card_header h2 {
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f9f9f9;
+  padding: 0;
+  margin: 0;
+}
+
+.card_header h2 i {
+  margin: 0 7px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.card_header h2 span {
+  position: relative;
+  font-size: 12px;
+  margin-left: 4px;
+  top: -6px;
+  color: #ddd;
+}
+
+.card_header h3 {
+  position: relative;
+  margin-top: 5px;
+  padding: 0;
+  font-size: 10px;
+  margin-left: 25px;
+  color: #bbb;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column; 
+  margin-top: 15px;
+  height: 100%;
+}
+
+.description {
+  font-size: 20px; /* Adjust the size as needed */
+  margin-bottom: 10px; /* Add some space between description and temperature */
+  color:white;
+}
+
+.temperature {
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.temperature i {
+  margin-right: 15px;
+}
+
+.temperature span {
+  top: 2px;
+  font-size: 16px;
+}
+
+.reveal_div {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: -40px;
+    z-index: 9;
+    background: linear-gradient(#a4a4a4 60%, #c4c4c4);
+    border-top: 1px solid #777;
+    box-sizing: border-box;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+  }
+  
+.day_reveal {
+  position: relative;
+  display: flex;
+  width: calc(100% / 4);
+  height: 100%;
+  border-right: 1px solid #777;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  opacity: 0;
+  color: #141414;
+}
+
+.day_reveal:last-child { border: none; }
+
+.day_reveal h2 {
+  display: flex;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  opacity: 0;
+}
+
+.day_reveal h3 {
+  display: flex;
+  position: absolute;
+  bottom: 3px;
+  right: 5px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.day_reveal h3 span {
+  display: flex;
+  position: relative;
+  font-size: 10px;
+  margin-right: 2px;
+  left: 2px;
+}
+
+.day_reveal i {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  font-size: 24px;
+  color: #343434;
+  opacity: 0;
+}
